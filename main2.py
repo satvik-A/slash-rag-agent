@@ -79,7 +79,7 @@ def get_top_chunks(query, k=5):
     search_limit = k * 5 if (user_budget or user_location) else k
     
     results = client.query_points(
-        collection_name="dragv7_bot",
+        collection_name="dragv8_bot",
         query=query_vector,
         limit=search_limit,
         with_payload=True
